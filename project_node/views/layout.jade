@@ -1,0 +1,26 @@
+doctype
+html(lang="en")
+    head
+        title test
+        link(rel='stylesheet', href='/style.css')
+        link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+    body
+      each user in students
+          if user.id != id
+              p.name
+                  = user.name + ' '
+                  a(href=`/${user.id}`) edit
+                  form(method='POST' action='/' + user.id + '/remove')
+                    input(name='id', value=user.id, type="hidden")
+                    button(type='submit') Delete
+          else
+              form(method='POST' action=`/${user.id}`)
+                  input(value = user.name, name="name")
+                  button(type='submit') Save
+        if add === true
+          form(method='POST' action=`/add`)
+              input(name="name")
+              button(type='submit') Save
+      else
+          p.name
+              a(href=`/add`) Add

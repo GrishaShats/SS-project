@@ -1,0 +1,36 @@
+{
+  "students" : [
+    {
+      "id":1,
+      "name" : "Oleksandr"
+    },
+    {
+      "id":2,
+      "name" : "Iryna"
+    },
+    {
+      "id":3,
+      "name": "Dmytro"
+    },
+    {
+      "id":4,
+      "name": "Oleksandr"
+    },
+    {
+      "id":5,
+      "name" : "Olena"
+    },
+    {
+      "id":6,
+      "name": "Oleksii"
+    },
+    {
+      "id":7,
+      "name" : "Diana"
+    },
+    {
+      "id":8,
+      "name" : "Hryhorii"
+    }
+  ]
+}
